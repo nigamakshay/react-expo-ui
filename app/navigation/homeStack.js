@@ -5,6 +5,7 @@ import { EditUserProfileScreen } from 'editUserProfileScreen';
 import { UserAddressesScreen } from 'userAddressesScreen';
 import { LocationSelectionScreen } from 'locationSelectionScreen';
 import { UserAddressForm } from 'userAddressForm';
+import { ReviewReceivedScreen } from 'reviewReceivedScreen';
 import i18n from 'i18n-js';
 import { themeColor, headerColor } from 'colorStyles';
 
@@ -48,6 +49,10 @@ export const HomeStack = (options) => {
         component={LocationSelectionScreen} 
         options={{ title: i18n.t("selectLocation") }} />
 
+      <Stack.Screen 
+        name="ReviewReceivedScreen" 
+        component={ReviewReceivedScreen} 
+        options={{ title: i18n.t("ratingsAndReviews") }} />
 
     </Stack.Navigator>
   );

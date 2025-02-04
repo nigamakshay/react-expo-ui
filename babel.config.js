@@ -37,6 +37,7 @@ module.exports = function(api) {
                       'phoneCallIcon': './app/components/icons/phoneCallIcon.js',
                       'closeIcon': './app/components/icons/closeIcon.js',
                       'checkboxIcon': './app/components/icons/checkboxIcon.js',
+                      'ratingIcon': './app/components/icons/ratingIcon.js',
 
                       'imagePicker': './app/components/images/imagePicker.js',
 
@@ -69,7 +70,7 @@ module.exports = function(api) {
                       'dataNotFoundMessage': './app/components/messages/dataNotFoundMessage.js',
 
                       'dashBoardTabScreen': './app/components/tabs/dashBoardTabScreen.js',
-                      'bookingsTabScreen': './app/components/tabs/bookingsTabScreen.js',
+                      'servicesTabScreen': './app/components/tabs/servicesTabScreen.js',
                       'settingsTabScreen': './app/components/tabs/settingsTabScreen.js',
 
                       'appText': './app/components/texts/appText.js',
@@ -110,6 +111,7 @@ module.exports = function(api) {
                       'addressSettingCard': './app/components/cards/setting/addressSettingCard.js',
                       'profileSettingCard': './app/components/cards/setting/profileSettingCard.js',
                       'ratingSettingCard': './app/components/cards/setting/ratingSettingCard.js',
+                      'reviewsCard': './app/components/cards/reviews/reviewsCard.js',
 
                       'homeScreen': './app/screens/homeScreen.js',
                       'loginSignUpScreen': './app/screens/loginSignUpScreen.js',
@@ -120,6 +122,9 @@ module.exports = function(api) {
                       'userAddressesScreen': './app/screens/userAddressesScreen.js',
                       'locationSelectionScreen': './app/screens/locationSelectionScreen.js',
                       'toDoScreen': './app/screens/toDoScreen.js',
+                      'reviewReceivedScreen': './app/screens/reviewReceivedScreen.js',
+                      'reviewThreadScreen': './app/screens/reviewThreadScreen.js',
+                      'serviceScreen': './app/screens/serviceScreen.js',
                                             
                       'logoutService': './app/services/logoutService.js',
                       'getData': './app/services/ajax/getData.js',                        

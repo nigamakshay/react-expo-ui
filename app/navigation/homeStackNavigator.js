@@ -1,11 +1,11 @@
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { dashBoardTabScreen } from 'dashBoardTabScreen';
-import { bookingsTabScreen } from 'bookingsTabScreen';
+import { servicesTabScreen } from 'servicesTabScreen';
 import { settingsTabScreen } from 'settingsTabScreen';
 import { settingsNavigator } from 'settingsNavigator';
 import { DashboardScreen } from "dashboardScreen";
 import { SettingsScreen } from "settingsScreen";
-import { ToDoScreen } from "toDoScreen";
+import { ServiceScreen } from "../screens/serviceScreen";
 
 const Tab = createBottomTabNavigator();
 
@@ -17,8 +17,8 @@ export const HomeStackNavigator = () => {
         {props => <DashboardScreen {...props} />}
       </Tab.Screen>
 
-      <Tab.Screen {...bookingsTabScreen()}>
-        {props => <ToDoScreen {...props} />}
+      <Tab.Screen {...servicesTabScreen()}>
+        {props => <ServiceScreen {...props} />}
       </Tab.Screen>
 
       <Tab.Screen {...settingsTabScreen()}>

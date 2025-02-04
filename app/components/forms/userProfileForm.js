@@ -11,7 +11,7 @@ import { VerticalRightView, FullContainer, VerticalScrollView, HorizontalView } 
 import { editUserProfile } from 'editUserProfile';
 import { AuthenticatedUserContext } from 'authenticatedUserProvider';
 import RadioButtonRN from 'radio-buttons-react-native';
-import { themeColor } from 'colorStyles';
+import { themeColor, themeMediumColor } from 'colorStyles';
 import { alertMessage } from 'alertMessage';
 import { isUserProfileComplete } from 'loginUtil';
 import { MandatoryIcon } from 'mandatoryIcon';
@@ -35,11 +35,11 @@ export const UserProfileForm = (options) => {
     {
       label: i18n.t('female'),
       value: 1
-    }//,
-    //{
-    //  label: 'male',
-    // value: 2
-    //}
+    },
+    {
+      label: 'male',
+     value: 2
+    }
   ];
 
   const navigation = useNavigation();
@@ -71,14 +71,21 @@ export const UserProfileForm = (options) => {
   }
 
   useEffect(() => {
-    if(userContext && userContext.userData) {
-      setName(userContext.userData.name);
-      setMobile(userContext.userData.mobile);
-      // setEmail(userContext.userData.email);
-      setGender(userContext.userData.gender);
-      setImage(userContext.userData.profile_pic_uri);
-      setLoading(false);
-    }
+    //Commented out because server code is not made public in git
+    // if(userContext && userContext.userData) {
+    //   setName(userContext.userData.name);
+    //   setMobile(userContext.userData.mobile);
+    //   // setEmail(userContext.userData.email);
+    //   setGender(userContext.userData.gender);
+    //   setImage(userContext.userData.profile_pic_uri);
+    //   setLoading(false);
+    // }
+
+    //Adding hard-coded data to display in UI
+    setName('XYZ');
+    setMobile('+1 111111111');
+    setGender(1);
+    setLoading(false);
   }, []);
 
   function isFormFilled() {
@@ -109,7 +116,7 @@ export const UserProfileForm = (options) => {
             box={false}
             textColor={themeColor}
             initial={gender ? 1 : 0}
-            activeColor={themeColor}
+            activeColor={themeMediumColor}
             style={{width: 300, marginBottom: 20}}
             data={genderSelection}
             selectedBtn={(e) => {

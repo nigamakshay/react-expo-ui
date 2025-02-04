@@ -1,14 +1,15 @@
 import React from 'react';
 import { ButtonContainer, ButtonText } from './style.js';
 import { cardBackgroundColor } from 'colorStyles';
+import { themeLightColor } from '../../../styles/colorStyles.js';
 
 export const PressableButton = (options) => (
 
   <ButtonContainer 
     onPress={options.onPress} 
     bgColor={options.bgColor || (
-      options.hasOwnProperty('setColorOn') && !options.setColorOn && cardBackgroundColor
-    )}
+      options.hasOwnProperty('setColorOn') && !options.setColorOn && cardBackgroundColor) || themeLightColor
+    }
     width={options.width}
     height={options.height}
     margin={options.margin || '10px 0 10px 0'}
