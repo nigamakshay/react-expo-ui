@@ -7,8 +7,6 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import auth from '@react-native-firebase/auth';
 import { containerBackgroundColor } from 'colorStyles';
 
-// const auth = getAuth(firebaseApp);
-
 export default function RootNavigator() {
   let userContext = useContext(AuthenticatedUserContext);
   let user = userContext.user;
@@ -42,8 +40,6 @@ export default function RootNavigator() {
   }
 
   useEffect(() => {
-    // user = userContext.user;
-    // onAuthStateChanged returns an unsubscriber
     const unsubscribeAuth = auth().onAuthStateChanged(async authenticatedUser => {
       
       try {
