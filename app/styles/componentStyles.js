@@ -26,7 +26,7 @@ export const checkboxIconSize = 24;
 export const bookingsTabIconName = 'call'
 export const dashboardTabIconName = 'home'
 export const settingsNavigatorIcon = 'user'
-export const servicesTabIconName = 'add-to-list'
+export const settingsTabIconName = 'add-to-list'
 
 export const headerTitleStyle = { fontWeight: 'bold', color: themeColor }
 

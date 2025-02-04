@@ -14,7 +14,9 @@ export const en = {
   myServices: 'My Services',
   servicesBooked: 'Services Booked:',
   bookings: 'Bookings',
+  dashboard: 'Dashboard',
   profile: 'Profile',
+  mySettings: 'Settings',
   createAccount: 'Create account',
   loginUsingEmail: 'Login using email',
   loginUsingPhoneNumber: 'Login using phone number',
@@ -218,5 +220,7 @@ export const en = {
   female: 'Female',
 
   privacyLink: 'Privacy Policy',
-  forgotPasswordLink: 'Forgot password'
+  forgotPasswordLink: 'Forgot password',
+
+  dashboardInstruction: 'Display quick info/links in dashboard screen.'
 };

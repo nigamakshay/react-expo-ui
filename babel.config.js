@@ -70,7 +70,7 @@ module.exports = function(api) {
 
                       'dashBoardTabScreen': './app/components/tabs/dashBoardTabScreen.js',
                       'bookingsTabScreen': './app/components/tabs/bookingsTabScreen.js',
-                      'servicesTabScreen': './app/components/tabs/servicesTabScreen.js',                      
+                      'settingsTabScreen': './app/components/tabs/settingsTabScreen.js',
 
                       'appText': './app/components/texts/appText.js',
                       'appTextSmall': './app/components/texts/appTextSmall.js',

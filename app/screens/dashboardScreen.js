@@ -1,8 +1,10 @@
 import { useContext, useEffect } from 'react';
-import { FullContainer } from 'containerStyles';
+import { FullContainer, CenterContainer} from 'containerStyles';
 import { AuthenticatedUserContext } from 'authenticatedUserProvider';
 import { useIsFocused } from "@react-navigation/native";
 import { getAppData } from 'getAppData';
+import I18n from 'i18n-js';
+import { Text } from 'react-native';
 
 export const DashboardScreen = ({ navigation }) => {
 
@@ -21,7 +23,9 @@ export const DashboardScreen = ({ navigation }) => {
 
   return (
     <FullContainer>
-
+      <CenterContainer>
+        <Text>{I18n.t('dashboardInstruction')}</Text>
+      </CenterContainer>
     </FullContainer>
   );
 }
