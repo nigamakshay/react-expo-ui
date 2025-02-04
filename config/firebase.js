@@ -1,5 +1,3 @@
-// import firebase from '@react-native-firebase/app';
-
 export const firebaseConfig = {
   apiKey: 'AIzaSyDk9TqVPgM9cxd0wV0MpvnM_OH9v61yP6E',
   authDomain: 'test-firebase-3ed2a.firebaseapp.com',
@@ -10,5 +8,3 @@ export const firebaseConfig = {
 };
 
 await firebase.initializeApp(firebaseConfig);
-
-// export default firebaseApp;
